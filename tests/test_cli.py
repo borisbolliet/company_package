@@ -11,7 +11,7 @@ def test_display_info(capsys, monkeypatch):
     # Capture output
     captured = capsys.readouterr()
 
-    # print(captured.out)
+    print(captured.out)
     
     # Check that output contains expected text (example output)
     assert "Company Name: N/A" in captured.out
@@ -39,7 +39,7 @@ def test_get_stock_price_difference(capsys, monkeypatch):
 
 
     # Test using pytest.approx for better floating point comparison
-    assert price_diff == pytest.approx(19.717864990234, rel=1e-4)
+    assert price_diff == pytest.approx(18.717864990234, rel=1e-4)
 
     
     

@@ -13,10 +13,16 @@ The **Company Package** is a Python package designed to model companies across d
 
 ## Installation
 
-Ensure you have Python 3.6 or higher. You can install the package and its dependencies with:
+Ensure you have Python 3.6 or higher. You can install the package and its dependencies from source with:
 
 ```bash
 pip install -e .
+```
+
+or from PyPi with:
+
+```bash
+pip install company_package
 ```
 
 ## Usage

@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel", "setuptools_scm", "build"]  # Build requireme
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "company"
+name = "company_package"
 dynamic = ["version"]
 description = "A Python package for modeling companies across various sectors."
 readme = "README.md"
@@ -16,7 +16,7 @@ authors = [
 keywords = ["companies", "finance", "healthcare", "technology"]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "Intended Audience :: Economists",
+    "Intended Audience :: Information Technology",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Libraries"
@@ -39,7 +39,10 @@ dependencies = [
 
 
 [tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
 write_to = "company/version.py"  # Where to write the dynamic version
+
 
 [tool.setuptools.packages.find]
 where = ["."]
